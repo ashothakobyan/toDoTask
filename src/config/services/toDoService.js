@@ -73,6 +73,7 @@ export default class ToDoService {
     currentItem.description = editingItem.description;
     currentItem.title = editingItem.title;
     currentItem.deadline = editingItem.deadline;
+    currentItem.priority = editingItem.priority;
     return currentItem;
   }
 
