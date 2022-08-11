@@ -1,0 +1,33 @@
+.wrapper {
+  width: 90%;
+  border-radius: 10px;
+  min-height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.unVisibleItem {
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ebecf0;
+}
+.description {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #4338a0;
+  word-wrap: break-word;
+}
+
+.done {
+  background-color: #5be3ef;
+}
+.deadline {
+  background-color: #fe1dae;
+}
+.dragOver {
+  box-shadow: 0 2px 3px gray;
+}

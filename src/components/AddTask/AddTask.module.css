@@ -1,0 +1,27 @@
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  background: rgb(147, 120, 215);
+  background: linear-gradient(
+    86deg,
+    rgba(147, 120, 215, 1) 38%,
+    rgba(245, 121, 212, 1) 89%
+  );
+  height: 50px;
+  position: relative;
+}
+
+.button {
+  width: 80px;
+  height: 50%;
+  top: 25%;
+  background-color: rgba(235, 236, 240, 255);
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  left: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px #bec5cf;
+}

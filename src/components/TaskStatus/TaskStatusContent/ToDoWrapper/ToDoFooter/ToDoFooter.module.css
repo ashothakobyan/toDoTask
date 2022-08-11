@@ -1,0 +1,18 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto 10px auto;
+  display: flex;
+  gap: 20px;
+}
+.visible {
+  width: 20px;
+  height: 20px;
+}
+.status,
+.visible:hover {
+  cursor: pointer;
+}
+.status {
+  width: 20px;
+  height: 20px;
+}

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddTask from "./components/AddTask/AddTask";
+import Content from "./components/Content/Content";
+import Header from "./components/Header/Header";
+import AddToDoModal from "./components/reusable/AddToDoModal/AddToDoModal";
+import { useSelector } from "react-redux/es/exports";
+import EditToDoModal from "./components/reusable/EditToDoModal/EditToDoModal";
 
 function App() {
+  const { editToDoModalState, addToDoModalState } = useSelector(
+    (stat) => stat.toDoSlicer
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        className={` App ${
+          editToDoModalState || addToDoModalState ? "modalOpen" : ""
+        }`}
+      >
+        <Header />
+        <AddTask />
+        <Content />
+      </div>
+      {addToDoModalState && <AddToDoModal />}
+      {editToDoModalState && <EditToDoModal />}
+    </>
   );
 }
 

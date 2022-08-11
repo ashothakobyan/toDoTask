@@ -1,0 +1,16 @@
+.title {
+  font-size: 25px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 3%;
+  top: 5px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+}

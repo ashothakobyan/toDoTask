@@ -1,0 +1,23 @@
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  height: 80%;
+  background: rgb(137, 132, 250);
+  background: linear-gradient(
+    86deg,
+    rgba(137, 132, 250, 1) 70%,
+    rgba(249, 134, 210, 1) 93%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
